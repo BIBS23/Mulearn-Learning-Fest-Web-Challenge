@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum </title>
+</head>
+
+<body style="margin: 0;">
+    <div style="background-color: rgb(69, 64, 64);height: 100vh;display: flex;    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;">
+        <h1 style="text-align: center;margin:0;color: rgb(255, 213, 0);font-weight: bolder;">Adder</h1>
+        <br>
+       
+       <span><label for="num1" style="color: white;padding: 10px;">Number 1:</label><input style="width: 300px;height: 40px;box-shadow: none; border-radius: 12px;" id="num1"  name="num1" placeholder="Enter Number 1"/></span> 
+       <br>
+       <span><label for="num2" style="color: white;padding: 10px;">Number 2:</label><input style="width: 300px;height: 40px;border-radius: 12px;" id="num2"  name="num2" placeholder="Enter Number 2"/></span> 
+        <br>
+
+       <button style="width: 120px;height: 40px;background-color: rgb(255, 213, 0);border-radius: 12px;box-shadow: none;" onclick="findSum()">Find Sum</button>
+       <br>
+       <h1 style="text-align: center;color: white;" id="sum"></h1>
+    </div>
+
+    <script>
+        function findSum() {
+            const num1 =  parseInt(document.getElementById("num1").value);
+            const num2 =  parseInt(document.getElementById("num2").value);
+            const sum = num1+num2;
+            document.getElementById("sum").innerHTML = "Sum : " + sum;
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
